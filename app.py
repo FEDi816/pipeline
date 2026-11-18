@@ -24,3 +24,7 @@ if __name__ == "__main__":
 @app.route("/version")
 def version():
     return {"version": "2.0"}
+
+
+def fonction_non_testee(x):
+    return x * 2
