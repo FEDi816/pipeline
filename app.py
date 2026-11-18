@@ -9,7 +9,7 @@ def addition(a, b):
 
 @app.route("/")
 def accueil():
-    return "Bonjour depuis la pipeline Jenkins + Docker !"
+    return "Bonjour depuis ma pipeline automatisée !"
 
 
 @app.route("/add/<int:a>/<int:b>")
