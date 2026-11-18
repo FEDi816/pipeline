@@ -19,3 +19,8 @@ def add(a, b):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
+
+
+@app.route("/version")
+def version():
+    return {"version": "2.0"}
