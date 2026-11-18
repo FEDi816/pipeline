@@ -40,15 +40,3 @@ def traitement_non_teste(valeurs):
         else:
             resultat.append(0)
     return resultat
-
-
-def traitement_non_teste(valeurs):
-    resultat = []
-    for valeur in valeurs:
-        if valeur > 0:
-            resultat.append(valeur * 2)
-        elif valeur < 0:
-            resultat.append(valeur * -1)
-        else:
-            resultat.append(0)
-    return resultat
