@@ -24,5 +24,3 @@ if __name__ == "__main__":
 @app.route("/version")
 def version():
     return {"version": "2.0"}
-
-SECRET = "motdepasse123"
