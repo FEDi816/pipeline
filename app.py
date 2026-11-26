@@ -7,6 +7,12 @@ def addition(a, b):
     return a + b
 
 
+def division(a, b):
+    if b == 0:
+        raise ValueError("Division par zéro impossible")
+    return a / b
+
+
 @app.route("/")
 def accueil():
     return "Bonjour depuis ma pipeline automatisée !"
@@ -17,26 +23,10 @@ def add(a, b):
     return {"resultat": addition(a, b)}
 
 
-if __name__ == "__main__":
-    app.run(port=8080)
-
-
 @app.route("/version")
 def version():
     return {"version": "2.0"}
 
 
-def fonction_non_testee(x):
-    return x * 2
-
-
-def traitement_non_teste(valeurs):
-    resultat = []
-    for valeur in valeurs:
-        if valeur > 0:
-            resultat.append(valeur * 2)
-        elif valeur < 0:
-            resultat.append(valeur * -1)
-        else:
-            resultat.append(0)
-    return resultat
+if __name__ == "__main__":  # pragma: no cover
+    app.run(port=8080)
