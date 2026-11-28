@@ -30,3 +30,7 @@ def version():
 
 if __name__ == "__main__":  # pragma: no cover
     app.run(port=8080)
+
+
+def fonction_test(x):
+    return x * 2
